@@ -1,0 +1,122 @@
+.about-us {
+	margin-left: -1%;
+	margin-top:20px;
+	margin-bottom:0px;
+	background-image: url("../images/wafer-background.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size: 100% 100%;
+	min-height:307px;
+	color: #000;
+	padding-left: 2%;
+	width: 100%;
+	
+	&__header {
+		width: 90%;
+		font-family: 'Roboto', sans-serif;
+		font-weight:500;
+		font-size:24px;
+		line-height:30px;
+		
+		padding-top:30px;
+		margin-bottom:10px;
+	}
+	&__list {
+		display:flex;
+		flex-wrap:wrap;	
+		list-style:none;
+		
+	}
+	&__item {
+		width:46%;
+		font-family: 'Roboto', sans-serif;
+		font-weight:400;
+		font-size:16px;
+		line-height:22px;
+		position:relative;
+		margin-right: 4%;
+
+	}
+	&__text {
+		&--1 {
+			padding-left:10%;	
+			margin:0px;
+			margin-bottom:25px;
+			&::before {
+				content:"";
+				background-image: url("../images/icecream-icon.svg");
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				width:50px;
+				min-height:50px;
+				position:absolute;
+				top:0px;
+				left:0;
+			}
+		}
+		&--2 {
+			padding-left:10%;	
+			margin:0px;
+			margin-bottom:25px;
+			&::before {
+				content:"";
+				background-image: url("../images/beef-icon.svg");
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				width:50px;
+				min-height:50px;
+				position:absolute;
+				top:0px;
+				left:0;
+			}
+		}
+		&--3 {
+			padding-left:10%;	
+			margin:0px;
+			&::before {
+				content:"";
+				background-image: url("../images/leaflet-icon.svg");
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				width:50px;
+				min-height:50px;
+				position:absolute;
+				top:0px;
+				left:0;
+			}
+		}
+		&--4 {
+			padding-left:10%;	
+			margin:0px;
+			&::before {
+				content:"";
+				background-image: url("../images/thermometer-icon.svg");
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				width:50px;
+				min-height:50px;
+				position:absolute;
+				top:0px;
+				left:0;
+			}
+
+		}
+	}
+
+}
+@media (max-width:1150px) {
+	.about-us {
+		&__text {
+			&::before {
+				background:none;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

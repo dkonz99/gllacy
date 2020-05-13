@@ -1,0 +1,62 @@
+.hits {
+	&__list {
+		display:flex;
+		list-style:none;
+		margin-top:40px;
+		padding:0px;
+
+	}
+	&__list img {
+		width:100%;
+		height:267px;
+	}
+	&__item {
+		width:100%;
+		position:relative;
+		text-align:center;
+		padding: 8px 15px 22px 15px;
+		&:hover {
+			background-color:rgba(255,255,255,0.4);
+		}
+	}
+	&__price {
+		font-size:45px;
+		line-height:45px;
+		position:absolute;
+		top:171px;
+		left:0px;
+	}
+	&__text {
+		font-size:16px;
+		line-height:22px;
+		font-family:'Roboto', sans-serif;
+		font-weight:500;
+		display:inline-block;
+		margin-top:15px;
+		&:hover { 
+			color:#ffbc9e;
+			text-decoration-color:#ffbc9e;
+			
+		}
+		&:active { 
+			color:#ffbc9e;
+			text-decoration-color:#ffbc9e;
+		}
+		&:focus { 
+			color:#ffbc9e;
+			text-decoration-color:#ffbc9e;
+		}
+	}
+	&__button {
+		margin: 0 auto;
+		margin-top:20px;
+		display:none;
+		
+	}
+	&__item:hover &__button{
+		display:block;  
+	}
+
+}
+
+

@@ -1,0 +1,107 @@
+.basket-products {
+	width:42%;
+	min-height:242px;
+	background-color:#f8f7f4;
+	border-radius:10px;
+	position:absolute;
+	top:65px;
+	left:54.5%;
+    box-shadow: 0px 20px 20px #5b6a62;
+    display:none;
+    z-index:1;
+	&__list {
+		display:flex;	
+		list-style:none;
+		margin:0px;
+		padding:0px;
+		margin:32px 0px 44px 3%;
+	}
+	&__item {
+		font-family: 'Roboto', sans-serif;
+		font-weight:400;
+		font-size:13px;
+		line-height:16px;
+		color: #323232;
+		margin:0px;
+		padding:0px;
+		&--text-cream {
+			position:relative;
+			width: 47%;
+			&::before {
+				content:"";
+				background: url("../images/icecream-basket-1.png") no-repeat 0px 0px;
+				display:inline-block;
+				width:33px;
+				min-height:33px;
+				position:absolute;
+				top:-10px;
+				left:-47px;
+			}
+		}
+		&--text-strawberry {
+			position:relative;
+			width: 47%;
+			&::before {
+				content:"";
+				background: url("../images/icecream-basket-2.png") no-repeat 0px 0px;
+				display:inline-block;
+				width:33px;
+				min-height:33px;
+				position:absolute;
+				top:-10px;
+				left:-47px;
+			}
+		}
+		&--quantity {
+			width: 22%;
+		}
+	}	
+	&__item span {
+		color:#999999;
+	}
+	&__cross {
+		margin:0px;
+		padding:0px;
+		margin-right:60px;
+	}
+	&__total {
+		font-family: 'Roboto', sans-serif;
+		font-weight:700;
+		font-size:15px;
+		line-height:18px;
+		color: #323232;
+		margin:0px;
+		padding:0px;
+		margin-top:35px;
+		margin-left:75%;
+		margin-bottom:17px;
+		position:relative;
+		&::before {
+			content:"";
+			background-color:#cacac7;
+			display:inline-block;
+			width:405%;
+			height:1px;
+			position:absolute;
+			top:-18px;
+			left:-320%;
+		}
+	}
+	&__button {
+		font-size: calc(8px + 0.5vw);
+		margin-left:61%;
+		margin-bottom:20px;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+

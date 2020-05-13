@@ -1,0 +1,99 @@
+.slider {
+	position:relative;
+	&__slide {
+		&--1 {
+			position:absolute;
+			font-size:60px;
+			line-height:60px;
+			padding-top:310px;
+			width:64%;
+			margin-left:22%;
+			background-image: url("../images/icecream.png");
+			background-repeat:no-repeat;
+			background-position: 0 0;
+			background-size: 100% 75%;
+			min-height:564px;
+			top:-500px;
+			text-align: center;
+			display:none;
+		}
+		&--2 {
+			position:absolute;
+			font-size:60px;
+			line-height:60px;
+			padding-top:310px;
+			width:61%;
+			margin-left:22%;
+			background-image: url("../images/icecream-2.png");
+			background-repeat:no-repeat;
+			background-position: 0 0px;
+			background-size: 100% 75%;
+			min-height:564px;
+			top:-500px;
+			text-align: center;
+			display:none;
+		}
+		&--3 {
+			position:absolute;
+			font-size:60px;
+			line-height:60px;
+			padding-top:310px;
+			width:58%;
+			margin-left:22%;
+			background-image: url("../images/icecream-3.png");
+			background-repeat:no-repeat;
+			background-position: 0 0px;
+			background-size: 100% 75%;
+			min-height:564px;
+			top:-500px;
+			text-align: center;
+			display:none;
+		}
+	}
+	&__form {
+		margin-top:451px;
+		padding-bottom: 100px;
+    
+	}
+	&__form ul{
+		list-style:none;
+		display:flex;
+		padding:0px;
+	}
+	&__form input[type=radio] {
+		display: none;
+	}
+	&__form label {
+		display: inline-block;
+		cursor: pointer;	
+	
+	}
+	&__form label:before {
+		content: "";
+		width:22px;
+		min-height:22px;
+    	margin-right:7px;
+		display: inline-block;
+		border-radius:50%;
+		border-color: white;
+		border-style: solid;
+	}
+
+ 	&__form input[type=radio]:checked + label:before {
+		background-color:#fff;
+	}
+	&__form label:hover:before {
+    	background-color:rgba(255,255,255,0.4);	
+	}
+	&__button {
+		/*position:absolute;*/
+		font-size:calc(20px + 0.5vw);
+		line-height:44px;
+    	width:40%;
+   	 	padding:12px 0px;
+    	min-height:65px;
+    	margin-top: 50px;   	
+    	/*left:40%;
+    	top:-20px;*/
+	}
+}

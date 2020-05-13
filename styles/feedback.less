@@ -1,0 +1,126 @@
+.feedback {
+	width: 100%;
+	max-width:440px;
+	min-height:450px;
+	background-color:#f8f7f4;
+	border-radius:10px;
+	position:fixed;
+	top:200px;
+    z-index:15;
+    display:none;
+    padding-left: 2%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+	&__header {
+		color:#323232;
+		font-weight:500;
+		font-size: 24px;
+    	line-height: 28px;
+  		font-family: 'Roboto', sans-serif;
+  		position:relative;
+  		margin:0px;
+  		padding:0px;
+  		margin-top:20px;
+  		
+	}
+	&__close {   /*Крестик для модального окна*/
+		width: 22px;
+		min-height: 22px;
+		cursor:pointer;
+		position:absolute;
+		top:25px;
+		left:90%;
+		&::before {
+			content:"";
+			position:absolute;
+			width: 22px;
+			height: 2px;
+			background-color:#231f20;
+			top:0px;
+			left:0px;
+			transform:rotate(45deg);
+		} 
+		&::after {
+			content:"";
+			position:absolute;
+			width: 22px;
+			height: 2px;
+			background-color:#231f20;
+			top:0px;
+			left:0px;
+			transform:rotate(-45deg);
+		}
+	}
+	&__form {
+		margin:0px;
+		padding:0px;
+	}
+	&__form p {
+		margin:0px;
+		padding:0px;
+	}
+	&__form input {
+		width:52%;
+		border-radius:5px;
+		color:#999999;
+		font-weight:400;
+		font-size: 16px;
+    	line-height: 24px;
+  		font-family: 'Roboto', sans-serif;
+  		border:none;
+  		border: 1px solid #999999;
+  		padding:10px 0px 10px 15px;
+  		
+  		margin-top:25px;
+  		outline:none;
+	}
+	&__form input:hover {
+		border: 2px solid #999999;
+	}
+
+	&__form input:focus {
+		border: 2px solid #8fbdec;
+    	color:#323232;
+		font-weight:700;
+	}
+	&__form input[type=email] {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	&__form textarea {
+		width:90%;
+		min-height:155px;
+		border-radius:5px;
+		color:#999999;
+		font-weight:400;
+		font-size: 16px;
+    	line-height: 24px;
+  		font-family: 'Roboto', sans-serif;
+  		border:none;
+  		border: 1px solid #999999;
+  		padding:10px 0px 10px 15px;
+  		
+  		margin-bottom:25px;
+  		outline:none;
+  		resize: none; /*Атрибут убирает возможность пользователю изменять размер*/
+	}
+	&__form textarea:hover {
+		border: 2px solid #999999;
+	}
+
+	&__form textarea:focus {
+		border: 2px solid #8fbdec;
+    	color:#323232;
+		font-weight:700;
+	}
+	&__button {
+		width:30%;
+		margin:0px;
+		margin-left:65%;
+		margin-bottom:25px;
+	}
+}
+
+
+
