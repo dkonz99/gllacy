@@ -1,0 +1,316 @@
+.filters {
+	padding:0px;
+	margin:0px;
+	&__form {
+		padding:0px;
+		margin:0px;
+	}
+	&__form-sorting {
+		border: none; 
+		margin:0px;
+		padding:0px;
+		margin-bottom:15px;
+		width: 17%;
+	}
+	&__form legend {
+		font-family: 'Roboto', sans-serif;
+		font-weight:500;
+		font-size:14px;
+		line-height:16px;
+		color: #fff;
+		margin-left:10%;
+		margin-bottom:10px;
+	
+	}
+	&__form ul {
+		list-style:none;
+		display:flex;
+	
+		margin:0px;
+		padding:0px;
+	}
+	&__form select {
+		font-family: 'Roboto', sans-serif;
+		font-weight:500;
+		font-size:calc(6px + 0.5vw);
+		line-height:18px;
+		color: #fff;
+		width:100%;
+		min-height:35px;
+		display:inline-block;
+		outline:none;
+		border-radius:20px;
+	
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    -ms-appearance: none;
+	    appearance: none;
+	    background: url("../images/icon-down-dir.png") no-repeat 168px 13px;
+	    background-color: #a9bab0;
+	    padding-left:10%;
+	}
+	&__form select:hover {
+		background: url("../images/icon-down-dir.svg") no-repeat 168px 13px;
+	    color: #323232;
+	    border:none;
+	    background-color: #a9bab0;
+	}
+	&__form select:focus {
+		background: url("../images/icon-down-dir.svg") no-repeat 168px 13px;
+	    color: #323232;
+	    border:none;
+	    background-color: #ffffff;
+	}
+	&__form select option {
+		font-family: 'Roboto', sans-serif;
+		font-weight:400;
+		font-size:14px;
+		line-height:16px;
+		color: #323232;
+		outline:none;
+	}
+	&__form-range {
+		border: none; 
+		margin:0px;
+		padding:0px;
+		margin-bottom:15px;
+		margin-left:1.5%;
+		width: 20%;
+	}
+	&__form-range legend {
+		padding-left: 0px;
+    	
+	}
+
+
+	&__form-range input[type=text] {
+    	border: 0;
+    	background: 0 0;
+    	text-align: right;
+    	width: 16%;
+    	margin-left: -2px;
+    	font-size: 14px;
+    	line-height: 16px;
+    	color: #fff;
+	}
+
+	&__range-controls {
+    	position: relative;
+    	width: 80%;
+    	border: 1px solid transparent;
+    	background: rgba(255,255,255,.2);
+    	border-radius: 40px;
+    	padding-top: 15px;
+    	height: 18px;
+    	padding-left: 10%;
+    	padding-right: 10%;
+	}
+
+	 &__scale {
+    	height: 4px;
+    	background: rgba(248,247,244,.5);
+    	padding-left: 8%;
+    	padding-right: 28%;
+	}
+
+	 &__bar {
+    	height: 4px;
+    	background: #f8f7f4
+	}
+
+	 &__toggle {
+    	position: absolute;
+    	top: 7px;
+    	width: 4px;
+    	height: 4px;
+    	padding: 0;
+    	border: 8px solid #fff;
+    	background-color: #ababab;
+    	border-radius: 50%;
+    	cursor: pointer;
+		&--min {
+    		left: 15%;
+		}
+
+		&--max {
+    		left: 60%;
+		}
+	}
+
+	&__form-fat {
+		border: none; 
+		margin:0px;
+		padding:0px;
+    	margin-bottom:15px;
+    	margin-left:1.5%;
+    	width: 36%;
+	}
+	&__form-fat legend {
+		margin-left:4%;
+	}
+	&__form-fat ul {
+		width:95%;
+		min-height:35px;
+		outline:none;
+		border-radius:20px;
+		background-color: #a9bab0;
+		margin:0px;
+		padding:0px;
+		padding-left:12%;
+	}
+	/*Стилизация радио кнопки*/
+	&__form-fat input {
+		display:none;
+	}
+	&__form-fat  label {
+		display:inline-block;
+		cursor:pointer;
+		font-family: 'Roboto', sans-serif;
+		font-weight:500;
+		font-size:16px;
+		line-height:18px;
+		color: #fff;
+		margin:0px;
+		padding:0px;
+    	padding-right:52px;
+		position:relative;
+		padding-top:9px;
+		opacity: 0.8;
+ 
+	}
+	&__form-fat &__label--last {
+		padding-right:0px;
+	}
+	&__form-fat label::before {
+		content:"";
+		background: url("../images/radio-off.png") no-repeat 0px 0px;
+		display:inline-block;
+		width:22px;
+		min-height:22px;
+		top:5px;
+		left:-30px;
+		position:absolute;
+
+	}
+	&__form-fat input[type=radio]:checked + label::before {
+		content:"";
+		background: url("../images/radio-on.png") no-repeat 0px 0px;
+		display:inline-block;
+		width:22px;
+		min-height:22px;
+		top:5px;
+		left:-30px;
+		position:absolute;
+
+	}
+	&__form-fat label:hover {
+		opacity: 1;	
+	}
+	&__form-fat input[type="radio"]:disabled + label {
+		opacity: 0.4;
+	}
+	&__fillers {
+		border: none; 
+		margin:0px;
+		padding:0px;  
+    	/*margin-left:1.5%;*/
+	}
+	&__fillers legend{
+		margin-left: 1.5%;
+	}
+	&__fillers ul {
+		width:60%;
+		height:35px;
+		outline:none;
+		border-radius:20px;
+		background-color: #a9bab0;
+		margin:0px;
+		padding:0px;
+		padding-left:4.5%;
+
+	}
+	/*Стилизация чекбоксов*/
+	&__fillers input {
+		display:none;
+	}
+	&__fillers  label {
+		display:inline-block;
+		cursor:pointer;
+		font-family: 'Roboto', sans-serif;
+		font-weight:500;
+		font-size:calc(6px + 0.5vw);
+		line-height:18px;
+		color: #fff;
+		margin:0px;
+		padding:0px;
+    	margin-right:60px;
+		position:relative;
+		padding-top:9px;
+		opacity: 0.8;
+ 
+	}
+	&__fillers &__label--last {
+		margin-right:0px;
+	}
+	&__fillers label::before {
+		content:"";
+		background: url("../images/checkbox-off.png") no-repeat 0px 0px;
+		display:inline-block;
+		width:20px;
+		min-height:20px;
+		top:7px;
+		left:-30px;
+		position:absolute;
+
+	}
+	&__fillers input[type=checkbox]:checked + label::before {
+		content:"";
+		background: url("../images/checkbox-on.png") no-repeat 0px 0px;
+		display:inline-block;
+		width:20px;
+		min-height:20px;
+		top:7px;
+		left:-30px;
+		position:absolute;
+
+	}
+	&__fillers label:hover {
+		opacity: 1;	
+	}
+	&__fillers input[type="checkbox"]:disabled + label {
+		opacity: 0.4;
+	}
+	&__button {
+		width:100%;
+		height:38px;
+		font-size:calc(6px + 0.5vw);
+		padding-top:5px;
+		border: 2px solid #ffffff;
+		background-color: #a6b7ad;
+		box-shadow:none;
+		margin-left:10%;
+		&:hover {
+			background-color: #ffffff;
+			color: #323232;
+			box-shadow:none;
+		}
+		&:focus {
+			background-color: #eaeaea;
+			color: #323232;
+			box-shadow: 0px -2px 2px #6a6b6a;
+			border: 2px solid #eaeaea;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
