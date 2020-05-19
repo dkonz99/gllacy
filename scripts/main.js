@@ -4,6 +4,7 @@ import {slider} from "./slider.js";
 import {range} from "./range.js";
 import {filters} from "./filters.js";
 
+
 menuShow();
 feedback();
 slider();
